@@ -45,14 +45,14 @@ namespace ConsoleApp23
         }
 
 
-        public static bool CheckGroupNo(string password)
+        public static bool CheckGroupNo(string groupno)
         {
             bool Hasdigit = false;
             bool HasUpper = false;
 
-            if (!string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(groupno))
             {
-                foreach (var item in password)
+                foreach (var item in groupno)
                 {
                     if (char.IsDigit(item))
                     {
